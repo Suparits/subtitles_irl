@@ -162,6 +162,7 @@ public class ExampleStreaming : MonoBehaviour
         foreach (var alt in res.alternatives)
         {
           string text_snippet = alt.transcript;
+		  //yield return new WaitForSeconds(0.5);
           //Log.Debug("ExampleStreaming", string.Format("{0} ({1}, {2:0.00})\n", text, res.final ? "Final" : "Interim", alt.confidence));
 					Log.Debug("", string.Format("{0}\n",text_snippet));
 					subtitles += text_snippet + " ";

@@ -8,6 +8,7 @@ public class cameraToImage : MonoBehaviour {
 	void Start () 
 	{
 		WebCamTexture webcamTexture = new WebCamTexture();
+		//webcamTexture.deviceName = "Kinect V2 Video Sensor";
 		rawimage.texture = webcamTexture;
 		rawimage.material.mainTexture = webcamTexture;
 		webcamTexture.Play();
